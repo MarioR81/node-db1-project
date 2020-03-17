@@ -61,8 +61,7 @@ router.delete('/:id', (req, res) => {
     });
 });
 
-
-router.put(':id', (req, res) => {
+router.put('/:id', (req, res) => {
     const changes = req.body;
 
     db('accounts')
@@ -79,7 +78,6 @@ router.put(':id', (req, res) => {
         res.status(500).json({ message: 'sorry, ran into an error' })
     });
 })
-
 
 
 module.exports = router;
