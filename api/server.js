@@ -1,7 +1,6 @@
 const express = require("express");
 
 
-
 const Router = require('../data/router.js');
 
 const server = express();
